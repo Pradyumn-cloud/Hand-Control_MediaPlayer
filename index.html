@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Player</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+</head>
+<body>
+
+  <h2>Custom Video Player</h2>
+
+
+  <div class="url-loader">
+    <input type="text" id="videoURL" placeholder="Paste direct video URL (.mp4, .webm, etc.)">
+    <button onclick="loadVideo()">Load Video</button>
+  </div>
+
+
+  <video id="videoPlayer" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  
+  <script src="sketch.js"></script>
+</body>
+</html>
